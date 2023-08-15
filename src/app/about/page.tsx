@@ -1,3 +1,9 @@
+import Profile from "@/components/Profile";
+
 export default function AboutPage() {
-  return <div>자기 소개</div>;
+  return (
+    <section>
+      <Profile />
+    </section>
+  );
 }
