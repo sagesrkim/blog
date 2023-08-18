@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import profileImage from "../../public/assets/profileImage.jpg";
 
 export default function Profile() {
@@ -9,8 +8,8 @@ export default function Profile() {
         className="w-50 rounded-full mx-auto p-4"
         src={profileImage}
         alt="profileImage"
-        height={250}
-        width={250}
+        height={200}
+        width={200}
         priority
       />
       <h3 className="text-2xl mt-2 font-semibold">Frontend Developer</h3>
