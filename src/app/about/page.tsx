@@ -1,5 +1,4 @@
 import Profile from "@/components/Profile";
-import Link from "next/link";
 
 export default function AboutPage() {
   const TITLE_CLASS = "text-xl font-bold text-gray-800 m-2";
@@ -30,11 +29,11 @@ export default function AboutPage() {
           <span className="mx-10">HTML5</span>
           <span className="mx-10">CSS3</span>
         </div>
-        <Link href="/contact">
+        <a href="mailto:sagesaeromkim@gmail.com">
           <button className="bg-blue-500 rounded-full px-4 py-3 mt-10 font-semibold text-xl text-white hover:bg-blue-600 hover:transition-all">
             Contact me
           </button>
-        </Link>
+        </a>
       </section>
     </>
   );
