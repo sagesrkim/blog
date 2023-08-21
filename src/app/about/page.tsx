@@ -1,5 +1,6 @@
 import Profile from "@/components/Profile";
 
+
 export default function AboutPage() {
   const TITLE_CLASS = "text-xl font-bold text-gray-800 m-2";
   return (
