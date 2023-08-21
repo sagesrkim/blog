@@ -5,11 +5,11 @@ export default function Profile() {
   return (
     <section className="text-center mt-10">
       <Image
-        className="rounded-lg mx-auto"
+        className="rounded-lg mx-auto mb-4"
         src={profileImage}
         alt="profileImage"
-        height={300}
-        width={300}
+        height={350}
+        width={350}
         priority
       />
       <h3 className="text-2xl mt-2 font-semibold">Frontend Developer</h3>
