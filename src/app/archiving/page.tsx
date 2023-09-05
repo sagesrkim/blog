@@ -6,13 +6,9 @@ import velogLogo from "../../../public/assets/velogLogo.png";
 export default function ArchivePage() {
   return (
     <>
-      <section className="p-20 flex flex-row justify-center">
-        <div className="flex flex-row m-10">
-          <Link
-            className="mx-4 hover:translate-y-2 hover:duration-300"
-            href="https://github.com/sagesrkim"
-            passHref
-          >
+      <section className="p-20 flex flex-row justify-center space-x-0 bg-gray-100">
+        <div className="flex flex-row m-10 p-10 rounded-lg bg-white hover:translate-y-2 hover:duration-300 hover:cursor-pointer">
+          <Link className="mx-4" href="https://github.com/sagesrkim" passHref>
             <BsGithub className="text-7xl" />
           </Link>
           <div>
@@ -23,13 +19,9 @@ export default function ArchivePage() {
             </p>
           </div>
         </div>
-        <div className="flex flex-row m-10">
-          <Link
-            className="mx-4 hover:translate-y-2 hover:duration-300 "
-            href="https://velog.io/@sagesrkim"
-            passHref
-          >
-            <Image src={velogLogo} alt="velog" width={80} height={80} />
+        <div className="flex flex-row m-10 p-10 rounded-lg bg-white hover:translate-y-2 hover:duration-300 hover:cursor-pointer">
+          <Link className="mx-4 " href="https://velog.io/@sagesrkim" passHref>
+            <Image src={velogLogo} alt="velog" width={100} height={100} />
           </Link>
           <div>
             <h3 className="text-2xl font-bold ">Velog</h3>
