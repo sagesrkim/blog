@@ -57,8 +57,8 @@ export default function ProjectPage() {
                     <GoDotFill className="my-1 text-lg text-center" />
                   </span>
                   <p>
-                    기술 스택: `Next.js`, `React`, `TypeScript`, `Redux
-                    Toolkit`, `Styled Component`, `Post CSS`, `Spring`, `AWS`
+                    기술 스택: Next.js, React, TypeScript, Redux Toolkit, Styled
+                    Component, Post CSS, Spring, AWS
                   </p>
                 </div>
               </div>
