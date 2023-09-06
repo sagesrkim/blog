@@ -5,10 +5,11 @@ export default function ProjectPage() {
   const SPAN_CLASS = "my-1 mr-1 text-lg text-center";
   return (
     <>
-      <section className="w-full h-full p-20 bg-sky-100 flex flex-col">
+      <section className="w-full h-full pt-10 p-20 bg-sky-100 flex flex-col">
+        <h3 className="text-center text-4xl font-bold mb-20">Projects</h3>
         <main className="justify-center items-center">
           <div className="p-10 bg-white rounded-lg shadow-lg">
-            <h3 className="text-3xl text-center font-bold mb-8">모두의 여행</h3>
+            <h4 className="text-3xl text-center font-bold mb-8">모두의 여행</h4>
             <div className="flex flex-row justify-between">
               {" "}
               <div className="w-300 h-200 m-10 bg-gray-300">
