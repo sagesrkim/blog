@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 const notoSansKr = Noto_Sans_KR({
-  weight: ["500"],
+  weight: ["400"],
   subsets: ["latin"],
 });
 
