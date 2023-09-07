@@ -6,8 +6,9 @@ export default function AboutPage() {
   const SPAN_CLASS = "text-2xl font-bold mb-2";
   return (
     <>
-      <Profile />
-      <section className="text-center mx-20 px-20 flex flex-col justify-center items-center">
+      <section className="text-center w-full p-20 flex flex-col justify-center items-center bg-yellow-50">
+        <Profile />
+        <h3 className="text-2xl mt-2 font-semibold">Frontend Developer</h3>
         <div className="flex">
           <h2 className={TITLE_CLASS}>이름</h2>
           <p className={INFO_CLASS}>김새롬 </p>
@@ -35,7 +36,7 @@ export default function AboutPage() {
           </div>
         </div>
         <a href="mailto:sagesaeromkim@gmail.com">
-          <button className="bg-blue-500 rounded-full px-4 py-3 mt-10 font-semibold text-xl text-white hover:bg-blue-600 hover:transition-all">
+          <button className="bg-blue-500 rounded-full px-4 py-3 mt-10 font-semibold text-xl text-white hover:bg-blue-600 hover:transition-all animate-pulse hover:animate-none">
             Contact me
           </button>
         </a>
