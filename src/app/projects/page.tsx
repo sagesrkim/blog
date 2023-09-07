@@ -1,3 +1,4 @@
+import MainSlider from "@/components/MainSlider";
 import { GoDotFill } from "react-icons/go";
 
 export default function ProjectPage() {
@@ -11,9 +12,8 @@ export default function ProjectPage() {
           <div className="p-10 bg-white rounded-lg shadow-lg">
             <h4 className="text-3xl text-center font-bold mb-8">모두의 여행</h4>
             <div className="flex flex-row justify-between">
-              {" "}
-              <div className="w-300 h-200 m-10 bg-gray-300">
-                <p>이미지 슬라이더 </p>
+              <div className="mx-12">
+                <MainSlider />
               </div>
               <div>
                 <div className="flex flex-row mb-2">

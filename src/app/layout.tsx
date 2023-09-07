@@ -4,6 +4,14 @@ import { Inter } from "next/font/google";
 import { Noto_Sans_KR } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/swiper-bundle.min.css"; // Swiper v6 이상의 경우
+
+// import required modules
 
 const inter = Inter({ subsets: ["latin"] });
 
