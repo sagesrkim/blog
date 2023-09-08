@@ -62,6 +62,7 @@ export default function MainSlider() {
             alt={image.title}
             width={400}
             height={300}
+            priority
           />
         </SwiperSlide>
       ))}
