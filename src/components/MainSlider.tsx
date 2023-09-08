@@ -8,11 +8,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/swiper-bundle.min.css"; // Swiper v6 이상의 경우
 
-type Image = {
+interface ImageType {
   id: number;
   title: string;
   imgUrl: string;
-};
+}
 
 export default function MainSlider() {
   SwiperCore.use([Navigation, Scrollbar]);
@@ -55,22 +55,17 @@ export default function MainSlider() {
       breakpoints={breakpoints}
       className="w-80 h-64"
     >
-      {images?.map(
-        (image: {
-          id: Key | null | undefined;
-          imgUrl: string | StaticImport;
-          title: string;
-        }) => (
-          <SwiperSlide key={image.id}>
-            <Image
-              src={image.imgUrl}
-              alt={image.title}
-              width={400}
-              height={300}
-            />
-          </SwiperSlide>
-        )
-      )}
+      {images?.map((image: ImageType) => (
+        <SwiperSlide key={image.id}>
+          <Image
+            src={image.imgUrl}
+            alt={image.title}
+            width={400}
+            height={300}
+            priority
+          />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 }
