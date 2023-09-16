@@ -16,7 +16,7 @@ import "swiper/swiper-bundle.min.css"; // Swiper v6 이상의 경우
 const inter = Inter({ subsets: ["latin"] });
 
 const notoSansKr = Noto_Sans_KR({
-  weight: ["400"],
+  weight: ["400", "900"],
   subsets: ["latin"],
 });
 
