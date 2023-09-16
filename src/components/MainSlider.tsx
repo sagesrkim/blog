@@ -1,6 +1,5 @@
 "use client";
 
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import { Key, useEffect, useRef, useState } from "react";
 import SwiperCore, { Navigation, Scrollbar } from "swiper";
@@ -17,7 +16,7 @@ interface ImageType {
 export default function MainSlider() {
   SwiperCore.use([Navigation, Scrollbar]);
   const swiperRef = useRef<SwiperCore>();
-  // const [images, setImages] = useState<Image[]>([]);
+  // const [images, setImages] = useState<ImageType[]>([]);
   const breakpoints = {
     768: {
       slidesPerView: 1,
@@ -38,19 +37,20 @@ export default function MainSlider() {
   // useEffect(() => {
   //   async function fetchData() {
   //     const res = await fetch("/api/image.ts");
+  //     console.log(res);
   //     const data = await res.json();
   //     setImages(data);
   //   }
   //   fetchData();
   //   console.log(images);
-  // }, []);
+  // }, [images]);
 
   return (
     <Swiper
       onSwiper={(swiper) => {
         swiperRef.current = swiper;
       }}
-      // pagination={{ clickable: true }}
+      pagination={{ clickable: true }}
       navigation
       breakpoints={breakpoints}
       className="w-80 h-64"
@@ -60,8 +60,8 @@ export default function MainSlider() {
           <Image
             src={image.imgUrl}
             alt={image.title}
-            width={400}
-            height={300}
+            width={500}
+            height={400}
             priority
           />
         </SwiperSlide>
