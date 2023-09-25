@@ -7,13 +7,13 @@ export default function Header() {
         <h1 className="text-2xl font-bold">{"Saerom's Portfolio"}</h1>
       </Link>
       <nav className="flex gap-4">
-        <Link className="hover:font-black hover:text-pink-600" href="about">
+        <Link className="hover:text-pink-600" href="about">
           about me
         </Link>
-        <Link href="archiving" className="hover:font-black hover:text-pink-600">
+        <Link href="archiving" className="hover:text-pink-600">
           archiving
         </Link>
-        <Link href="projects" className="hover:font-black hover:text-pink-600">
+        <Link href="projects" className="hover:text-pink-600">
           projects
         </Link>
       </nav>
