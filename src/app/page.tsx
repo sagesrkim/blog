@@ -1,6 +1,6 @@
 export default function HomePage() {
   return (
-    <section className="text-center min-h-screen  p-16">
+    <section className="text-center min-h-screen p-16">
       <h2 className="text-3xl font-bold mt-4 mb-20">
         {"꾸준함과 커뮤니케이션을 높은 가치로 두는 개발자 김새롬입니다"}
       </h2>
