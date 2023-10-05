@@ -7,7 +7,9 @@ export default function ArchivePage() {
   return (
     <>
       <section className="w-full min-h-full p-20 flex flex-col justify-center  bg-gray-100">
-        <h3 className="text-center text-4xl font-black mb-20">Archiving</h3>
+
+        <h3 className="text-center text-4xl font-black mb-10">Archiving</h3>
+
         <div className="flex flex-row justify-center space-x-0 ">
           <div className="mt-10 h-96">
             <Link
