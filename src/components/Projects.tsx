@@ -2,12 +2,12 @@ import MainSlider from "@/components/MainSlider";
 import Link from "next/link";
 import { GoDotFill } from "react-icons/go";
 
-export default function ProjectPage() {
+export default function Projects() {
   const DIV_CLASS = "flex flex-col mb-2 ";
   const SPAN_CLASS = "my-1 mr-1 text-lg text-center";
   return (
     <>
-      <section className="w-full h-full pt-10 p-20 bg-sky-100 flex flex-col">
+      <section className="w-full h-full pt-20 p-28 bg-sky-100 flex flex-col">
         <h3 className="text-center text-4xl font-black mb-20">Projects</h3>
         <main className="justify-center items-center">
           <div className="p-10 bg-white rounded-lg shadow-lg">

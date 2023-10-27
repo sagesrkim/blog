@@ -1,8 +1,10 @@
 "use client";
 
-import One from "@/components/One";
-import Three from "@/components/Three";
-import Two from "@/components/Two";
+import About from "@/components/About";
+import Archiving from "@/components/Archiving";
+
+import Projects from "@/components/Projects";
+
 import Link from "next/link";
 import React, { useRef } from "react";
 
@@ -14,9 +16,9 @@ export default function Home() {
   ) => {
     const name = (event.target as HTMLElement).innerText;
     const category: { [key: string]: number } = {
-      One: 0,
-      Two: 1,
-      Three: 2,
+      About: 0,
+      Archiving: 1,
+      Projects: 2,
     };
     const targetElement = scrollRef.current[category[name]];
 
@@ -26,29 +28,27 @@ export default function Home() {
   };
 
   return (
-
     <>
-      <div className="bg-white fixed top-0 w-full shadow-md flex justify-between items-center p-4">
+      <div className="bg-white fixed top-0 w-full shadow-md flex justify-between items-center p-4 z-40">
         <Link href="/">
           <h1 className="text-2xl font-bold">{"Saerom's Portfolio"}</h1>
         </Link>
-        <div className="flex gap-4 " onClick={handleScrollView}>
-          <span>One</span>
-          <span>Two</span>
-          <span>Three</span>
+        <div className="flex gap-4 cursor-pointer" onClick={handleScrollView}>
+          <span className="hover:text-pink-600">About</span>
+          <span className="hover:text-pink-600">Archiving</span>
+          <span className="hover:text-pink-600">Projects</span>
         </div>
-
       </div>
 
       <div>
         <div ref={(el) => (scrollRef.current[0] = el)}>
-          <One />
+          <About />
         </div>
         <div ref={(el) => (scrollRef.current[1] = el)}>
-          <Two />
+          <Archiving />
         </div>
         <div ref={(el) => (scrollRef.current[2] = el)}>
-          <Three />
+          <Projects />
         </div>
       </div>
     </>
