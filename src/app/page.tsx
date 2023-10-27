@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="bg-white fixed top-0 w-full shadow-md flex justify-between items-center p-4">
+      <div className="bg-white fixed top-0 w-full shadow-md flex justify-between items-center p-4 z-40">
         <Link href="/">
           <h1 className="text-2xl font-bold">{"Saerom's Portfolio"}</h1>
         </Link>
