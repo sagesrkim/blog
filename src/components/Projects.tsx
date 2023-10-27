@@ -1,6 +1,6 @@
-import MainSlider from "@/components/MainSlider";
 import Link from "next/link";
 import { GoDotFill } from "react-icons/go";
+import MainSlider from "./MainSlider";
 
 export default function Projects() {
   const DIV_CLASS = "flex flex-col mb-2 ";
