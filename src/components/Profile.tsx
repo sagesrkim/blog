@@ -3,16 +3,15 @@ import profileImage from "../../public/assets/profileImage.jpg";
 
 export default function Profile() {
   return (
-    <section className="text-center mt-10">
+    <section className="text-center">
       <Image
-        className="w-50 rounded-full mx-auto p-4"
+        className="transition ease-out duration-700 rounded-lg mx-auto mb-4  hover:skew-y-3 hover:duration-700 shadow-xl"
         src={profileImage}
         alt="profileImage"
-        height={200}
-        width={200}
+        height={350}
+        width={350}
         priority
       />
-      <h3 className="text-2xl mt-2 font-semibold">Frontend Developer</h3>
     </section>
   );
 }

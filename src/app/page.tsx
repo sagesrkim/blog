@@ -26,6 +26,7 @@ export default function Home() {
   };
 
   return (
+
     <>
       <div className="bg-white fixed top-0 w-full shadow-md flex justify-between items-center p-4">
         <Link href="/">
@@ -36,6 +37,7 @@ export default function Home() {
           <span>Two</span>
           <span>Three</span>
         </div>
+
       </div>
 
       <div>
