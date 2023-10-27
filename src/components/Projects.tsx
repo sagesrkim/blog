@@ -2,7 +2,7 @@ import MainSlider from "@/components/MainSlider";
 import Link from "next/link";
 import { GoDotFill } from "react-icons/go";
 
-export default function ProjectPage() {
+export default function Projects() {
   const DIV_CLASS = "flex flex-col mb-2 ";
   const SPAN_CLASS = "my-1 mr-1 text-lg text-center";
   return (
