@@ -2,10 +2,9 @@
 
 import About from "@/components/About";
 import Archiving from "@/components/Archiving";
-import One from "@/components/One";
+
 import Projects from "@/components/Projects";
-import Three from "@/components/Three";
-import Two from "@/components/Two";
+
 import Link from "next/link";
 import React, { useRef } from "react";
 

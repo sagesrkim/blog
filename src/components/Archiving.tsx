@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
-import velogLogo from "../../../public/assets/velogLogo.png";
+import velogLogo from "../../public/assets/velogLogo.png";
 
 export default function Archiving() {
   return (
     <>
-      <section className="w-full min-h-full p-20 flex flex-col justify-center  bg-gray-100">
+      <section className="w-full min-h-full mt-64 p-20 flex flex-col justify-center  bg-gray-100">
         <h3 className="text-center text-4xl font-black mb-10">Archiving</h3>
 
         <div className="flex flex-row justify-center space-x-0 ">
