@@ -33,10 +33,10 @@ export default function Home() {
         <Link href="/">
           <h1 className="text-2xl font-bold">{"Saerom's Portfolio"}</h1>
         </Link>
-        <div className="flex gap-4 " onClick={handleScrollView}>
-          <span>About</span>
-          <span>Archiving</span>
-          <span>Projects</span>
+        <div className="flex gap-4 cursor-pointer" onClick={handleScrollView}>
+          <span className="hover:text-pink-600">About</span>
+          <span className="hover:text-pink-600">Archiving</span>
+          <span className="hover:text-pink-600">Projects</span>
         </div>
       </div>
 
