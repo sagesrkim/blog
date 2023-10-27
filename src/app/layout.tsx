@@ -2,7 +2,6 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Noto_Sans_KR } from "next/font/google";
-import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import React, { useRef, useState } from "react";
 // Import Swiper React components
@@ -33,7 +32,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={notoSansKr.className}>
       <body className="flex flex-col w-full max-w-screen-2xl mx-auto">
-        <Header />
         <main className="grow">{children}</main>
         <Footer />
       </body>
