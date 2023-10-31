@@ -6,7 +6,7 @@ export default function About() {
   const SPAN_CLASS = "text-2xl font-bold mb-2";
   return (
     <>
-      <section className="text-center w-full p-20 pt-20 flex flex-col justify-center items-center bg-yellow-50">
+      <section className="text-center w-full p-20 pt-32 flex flex-col justify-center items-center bg-yellow-50">
         <h3 className="text-center text-4xl font-black mb-20">About me</h3>
         <Profile />
         <h3 className="text-2xl mt-2 font-semibold">Frontend Developer</h3>

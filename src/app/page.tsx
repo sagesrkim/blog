@@ -2,9 +2,7 @@
 
 import About from "@/components/About";
 import Archiving from "@/components/Archiving";
-
 import Projects from "@/components/Projects";
-
 import Link from "next/link";
 import React, { useRef } from "react";
 
@@ -29,11 +27,14 @@ export default function Home() {
 
   return (
     <>
-      <div className="bg-white fixed top-0 w-full shadow-md flex justify-between items-center p-4 z-40">
+      <div className="bg-white fixed top-0 w-full h-24 shadow-md flex justify-between items-center p-12 z-40">
         <Link href="/">
-          <h1 className="text-2xl font-bold">{"Saerom's Portfolio"}</h1>
+          <h1 className="text-3xl font-bold">{"Saerom's Portfolio"}</h1>
         </Link>
-        <div className="flex gap-4 cursor-pointer" onClick={handleScrollView}>
+        <div
+          className="text-xl flex gap-10 font-bold cursor-pointer mr-12"
+          onClick={handleScrollView}
+        >
           <span className="hover:text-pink-600">About</span>
           <span className="hover:text-pink-600">Archiving</span>
           <span className="hover:text-pink-600">Projects</span>
