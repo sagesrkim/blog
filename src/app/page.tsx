@@ -2,21 +2,23 @@
 
 import About from "@/components/About";
 import Archiving from "@/components/Archiving";
+import Portfolio from "@/components/Portfolio";
 import Projects from "@/components/Projects";
 import Link from "next/link";
 import React, { useRef } from "react";
 
 export default function Home() {
-  const scrollRef = useRef<(HTMLDivElement | null)[]>([null, null, null]);
+  const scrollRef = useRef<(HTMLDivElement | null)[]>([null, null, null, null]);
 
   const handleScrollView = (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>
   ) => {
     const name = (event.target as HTMLElement).innerText;
     const category: { [key: string]: number } = {
-      About: 0,
-      Archiving: 1,
-      Projects: 2,
+      Portfolio: 0,
+      About: 1,
+      Archiving: 2,
+      Projects: 3,
     };
     const targetElement = scrollRef.current[category[name]];
 
@@ -35,6 +37,7 @@ export default function Home() {
           className="text-xl flex gap-10 font-bold cursor-pointer mr-12"
           onClick={handleScrollView}
         >
+          <span className="hover:text-pink-600">Portfolio</span>
           <span className="hover:text-pink-600">About</span>
           <span className="hover:text-pink-600">Archiving</span>
           <span className="hover:text-pink-600">Projects</span>
@@ -43,12 +46,15 @@ export default function Home() {
 
       <div>
         <div ref={(el) => (scrollRef.current[0] = el)}>
-          <About />
+          <Portfolio />
         </div>
         <div ref={(el) => (scrollRef.current[1] = el)}>
-          <Archiving />
+          <About />
         </div>
         <div ref={(el) => (scrollRef.current[2] = el)}>
+          <Archiving />
+        </div>
+        <div ref={(el) => (scrollRef.current[3] = el)}>
           <Projects />
         </div>
       </div>
