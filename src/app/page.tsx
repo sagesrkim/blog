@@ -10,7 +10,6 @@ import React, { useRef } from "react";
 
 export default function Home() {
   const scrollRef = useRef<(HTMLDivElement | null)[]>([null, null, null, null]);
-  const router = useRouter();
   const handleScrollView = (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>
   ) => {
@@ -28,17 +27,10 @@ export default function Home() {
     }
   };
 
-  const handleGoHome = () => {
-    router.push("/");
-    window.location.reload();
-  };
-
   return (
     <>
       <div className="bg-white fixed top-0 w-full h-24 shadow-md flex justify-between items-center p-12 z-40">
-        <h1 className="text-3xl font-bold" onClick={handleGoHome}>
-          {"Saerom's Portfolio"}
-        </h1>
+        <h1 className="text-3xl font-bold">{"Saerom's Portfolio"}</h1>
 
         <div
           className="text-xl flex gap-10 font-bold cursor-pointer mr-12"
